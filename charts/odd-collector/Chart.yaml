@@ -3,4 +3,4 @@ name: odd-collector
 description: A Helm chart for any odd-collector compatible deployments
 type: application
 version: 0.1.3
-appVersion: 0.1.1
+appVersion: latest
