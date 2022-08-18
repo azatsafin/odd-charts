@@ -37,7 +37,7 @@ jobs:
           if [ ! -z "$chart_changes" ];
           then
             pybump bump --file charts/$chart/Chart.yaml --level patch --quiet
-            new_version=$(jq '.version' charts/$chart/Chart.yaml )
+            new_version=$(yq '.version' charts/$chart/Chart.yaml )
             echo $new_version
             echo "git push"
             git add charts/$chart/Chart.yaml
