@@ -25,6 +25,7 @@ jobs:
     - name: Bump Helm Chart Version
       run: |
         #!/bin/bash
+        set -x
         python3 -m pip install pybump
         charts=$(ls -d charts/*/ | awk -F/ '{print $2}')
         #echo $charts
